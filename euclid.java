@@ -3,9 +3,10 @@ Find the gcd of any RECTANGLE by dividing the longest side by the shortest side 
 */
 public class euclid {
     public static void main(String[] args) {
-        System.out.println("gcd = " + gcd(345,150));
+        System.out.println("gcd = " + rec(345,150));
     }
-    static int gcd(int max, int min){
+    //Iterative:
+    static int iter(int max, int min){ 
         int gcd = max % min;
         while(true){
             max = min;
@@ -16,5 +17,13 @@ public class euclid {
             }
         }
         return min;
+    }
+    //Recursive:
+    static int rec(int max, int min){
+        int rem = max % min;
+        if(rem == 0){
+            return min;
+        }
+        return rec(min,rem);
     }
 }
