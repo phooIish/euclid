@@ -1,9 +1,6 @@
-package com.company;
-
-/**
- * Divide longest side by shortest side
- * Repeat using the remainder until the shortest side divides the longest fully.
- */
+/*
+Find the gcd of any RECTANGLE by dividing the longest side by the shortest side until the longest side is divided evenly.
+*/
 public class euclid {
     public static void main(String[] args) {
         System.out.println("gcd = " + gcd(345,150));
