@@ -6,7 +6,6 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
         int l, w, gcd, min, max;
         Scanner sides = new Scanner(System.in);
