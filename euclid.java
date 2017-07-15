@@ -7,12 +7,12 @@ public class euclid {
     }
     //Iterative:
     static int iter(int max, int min){ 
-        int gcd = max % min;
+        int rem = max % min;
         while(true){
             max = min;
-            min = gcd;
-            gcd = max % min;
-            if(gcd == 0){
+            min = rem;
+            rem = max % min;
+            if(rem == 0){
                 break;
             }
         }
